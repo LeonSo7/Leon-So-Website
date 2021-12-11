@@ -1,0 +1,22 @@
+.card {
+    width: 210px;
+    height: 400px;
+    background-color: black;
+    border-radius: 15px;
+    border: solid #FF9900 6px;
+    position: relative;
+}
+
+#cardDateTxt {
+    color: ghostwhite;
+    font-weight: bold;
+}
+
+#cardLogoDiv {
+    margin-top: 20px;
+}
+
+#cardMemojiDiv {
+    position: absolute;
+    bottom: 0;
+}
