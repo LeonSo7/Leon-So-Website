@@ -1,14 +1,18 @@
-.card {
+.idCard {
     width: 210px;
     height: 400px;
-    background-color: black;
+    /* background-color: black; */
+    /* background-color: #121212; */
+    background-color: ghostwhite;
     border-radius: 15px;
-    border: solid #FF9900 6px;
+    /* border: solid #FF9900 6px; */
+    border: solid #00A8E1 6px;
+    /* border: solid #fff 6px; */
     position: relative;
 }
 
 #cardDateTxt {
-    color: ghostwhite;
+    /* color: ghostwhite; */
     font-weight: bold;
 }
 
