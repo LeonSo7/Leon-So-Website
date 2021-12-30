@@ -13,8 +13,16 @@ import { SiAmazon, SiIbm, SiPalantir } from 'react-icons/si';
 import { FaFacebookF, FaGraduationCap, FaQuestion, FaUniversity } from 'react-icons/fa';
 import 'react-perfect-scrollbar/dist/css/styles.css';
 import Bio from '../components/aboutSection/Bio';
+import React, { useState } from "react";
 
 function Home() {
+    const [selectedTimelineNode, setSelectedTimelineNode] = useState(null);
+
+    function selectTimelineNode(selectedNodeValue) {
+        console.log(selectedNodeValue);
+        setSelectedTimelineNode(selectedNodeValue);
+    };
+
     return (
         <div>
             <div id="aboutSection">
@@ -48,6 +56,10 @@ function Home() {
                         color="#7A003C"
                         title='McMaster University'
                         subtitle='09/17'
+                        action={{
+                            label: 'McMaster University',
+                            onClick: () => selectTimelineNode('McMaster University')
+                        }}
                     />
 
                     <TimelineEvent

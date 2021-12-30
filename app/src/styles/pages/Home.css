@@ -10,10 +10,6 @@
 }
 
 /* About section */
-#mainHeaderTxt {
-    font-weight: bold;
-}
-
 #aboutSection {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -26,18 +22,6 @@
 #aboutTxtContentDiv{
     padding-left: 50px;
     padding-right: 20px;
-}
-
-#headerTxtDiv {
-    display: flex;
-    flex-direction: row;
-    align-items: center; 
-    justify-content: center;
-}
-
-#bioTextDiv {
-    align-items: left; 
-    text-align: justify;
 }
 
 #cardDiv {
@@ -74,3 +58,26 @@
         flex: 0;
       }
   }
+
+/* Timeline */
+/* Timeline scroll bar -- always show scroll bar after initialized */
+.ps-container > .ps-scrollbar-x-rail,
+.ps-container > .ps__rail-x, 
+.ps__rail-x {   
+    display:block !important;
+    opacity: 0.6 !important; 
+}
+
+/* Timeline node hover */
+.MuiGrid-root:hover > svg,
+.MuiGrid-root:hover > svg > g,
+.MuiGrid-root:hover > svg > g > circle {
+    opacity: 0.9 !important;
+}
+
+/* Timeline node click */
+.MuiGrid-root:active > svg,
+.MuiGrid-root:active > svg > g,
+.MuiGrid-root:active > svg > g > circle {
+    opacity: 0.6 !important;
+}
