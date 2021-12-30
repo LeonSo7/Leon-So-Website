@@ -8,7 +8,7 @@ function Card() {
                 <img width="100px" src="/assets/logos/amazon-logo-blue.png" />
             </div>
             <div id="cardMemojiDiv">
-                <img width="210px" src="/assets/images/memoji.png" />
+                <img width="198px" src="/assets/images/memoji.png" />
             </div>
         </div>
     );
