@@ -9,3 +9,7 @@
     align-items: left; 
     text-align: justify;
 }
+
+#mainHeaderTxt {
+    font-weight: bold;
+}

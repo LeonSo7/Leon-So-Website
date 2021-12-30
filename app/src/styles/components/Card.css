@@ -50,3 +50,7 @@
 .mcmasterCard > .idCard {
     border: solid #7A003C 6px !important;
 }
+
+.mcmasterCardGold > .idCard {
+    border: solid #FDBF57 6px !important;
+}
