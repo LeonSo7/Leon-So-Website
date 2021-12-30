@@ -3,7 +3,7 @@ import '../styles/components/Header.css'
 import { Container, Navbar, Nav } from 'react-bootstrap';
 function Header() {
     return (
-        <Navbar fixed collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar fixed collapseOnSelect expand="lg" bg="black" variant="dark">
             <Container id="headerContainer" fluid>
                 <Navbar.Brand href="#home">LEON SO</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -13,15 +13,13 @@ function Header() {
                         <Nav.Link href="#pricing">EXPERIENCE</Nav.Link>
                         <Nav.Link href="#pricing">SKILLS</Nav.Link>
                     </Nav>
-                </Navbar.Collapse>
-                <Navbar>
-                    <Nav className="m-auto">
+                    <Nav className="mr-auto">
                         <Nav.Link href="#deets">EMAIL</Nav.Link>
                         <Nav.Link eventKey={2} href="#memes">
                             LINKEDIN
                         </Nav.Link>
                     </Nav>
-                </Navbar>
+                </Navbar.Collapse>
             </Container>
         </Navbar>
     )

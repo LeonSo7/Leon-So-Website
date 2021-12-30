@@ -1,0 +1,10 @@
+/* Timeline */
+#timelineDiv {
+    background-color: #202124;
+    align-items: center; 
+    justify-content: center;
+    vertical-align: middle;
+    height: 180px;
+    padding-top: 45px !important;
+    padding-left: 10px !important;
+}
