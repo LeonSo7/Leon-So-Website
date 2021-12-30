@@ -1,13 +1,10 @@
 .idCard {
     width: 210px;
     height: 400px;
-    /* background-color: black; */
     background-color: #121212;
     /* background-color: ghostwhite; */
     border-radius: 15px;
-    /* border: solid #FF9900 6px; */
-    border: solid #00A8E1 6px;
-    /* border: solid #fff 6px; */
+    border: solid #fff 6px; /* Default */
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
 }
@@ -25,4 +22,31 @@
 #cardMemojiDiv {
     position: absolute;
     bottom: 0;
+}
+
+/* Card styling for different organizations */
+/* Default */
+#defaultNameCardTxt {
+    color: #fff;
+    font-size: 20px;
+}
+
+.amazonCardBlue > .idCard {
+    border: solid #00A8E1 6px !important;
+}
+
+.amazonCardOrange > .idCard {
+    border: solid #FF9900 6px !important;
+}
+
+.metaCard > .idCard {
+    border: solid #0668E1 6px !important;
+}
+
+.ibmCard > .idCard {
+    border: solid #0043CE 6px !important;
+}
+
+.mcmasterCard > .idCard {
+    border: solid #7A003C 6px !important;
 }

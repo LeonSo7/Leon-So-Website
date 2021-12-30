@@ -46,6 +46,13 @@
     justify-content: center;
 }
 
+.columnSpaceHolder {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
 /* On screens that are 800px or less */
 @media screen and (max-width: 800px) {
     #aboutSection {
@@ -56,4 +63,14 @@
         display: flex;
         flex-direction: column-reverse;
     }
+  }
+
+/* On screens that are between 801px and 1200px */
+@media screen and (max-width: 1200px) and (min-width: 801px) {
+    .columnSpaceHolder {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 0;
+      }
   }

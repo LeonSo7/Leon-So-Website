@@ -1,0 +1,11 @@
+#headerTxtDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+}
+
+#bioTextDiv {
+    align-items: left; 
+    text-align: justify;
+}
