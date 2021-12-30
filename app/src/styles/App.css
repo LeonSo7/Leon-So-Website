@@ -6,3 +6,18 @@
   width: 100vw;
   margin: 0;
 }
+
+/* Flex grid */
+.doubleColumn {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}

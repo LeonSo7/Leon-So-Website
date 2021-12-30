@@ -2,16 +2,40 @@
 import '../styles/App.css';
 import '../styles/pages/Home.css';
 import Card from '../components/Card';
+import { Row } from 'react-bootstrap';
 import { Timeline, TimelineEvent } from '@mailtop/horizontal-timeline';
 import { SiAmazon, SiIbm, SiPalantir } from 'react-icons/si';
 import { FaFacebookF, FaGraduationCap, FaQuestion, FaUniversity } from 'react-icons/fa';
 import 'react-perfect-scrollbar/dist/css/styles.css';
+import { EmojiProvider, Emoji } from 'react-apple-emojis'
+import emojiData from 'react-apple-emojis/lib/data.json'
+import { Animated } from "react-animated-css";
+
 function Home() {
 
     return (
         <div>
-            <h1>Hello World!</h1>
-            <Card></Card>
+            <div id="aboutSection">
+                <div className="column">
+                    <Card></Card>
+                </div>
+                <div className="doubleColumn">
+                    <div id="headerTxtDiv">
+                        <h1 id="mainHeaderTxt">
+                            Hello World!&nbsp;
+                        </h1>
+                        <Animated animationIn="tada">
+                            <EmojiProvider data={emojiData}>
+                                <Emoji name="waving-hand-light-skin-tone" width={40} />
+                            </EmojiProvider>
+                        </Animated>
+                    </div>
+                </div>
+                <div className="column">
+                    { /* Empty column */}
+                </div>
+            </div>
+
             <div id="timelineDiv">
                 <Timeline
                     id="timeline"
@@ -53,7 +77,7 @@ function Home() {
                     />
                     <TimelineEvent
                         icon={FaFacebookF}
-                        color="#4267B2"
+                        color="#1778F2"
                         title='Facebook (Meta)'
                         subtitle='(Incoming) 06/22-09/22'
                     />

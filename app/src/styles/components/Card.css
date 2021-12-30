@@ -2,8 +2,8 @@
     width: 210px;
     height: 400px;
     /* background-color: black; */
-    /* background-color: #121212; */
-    background-color: ghostwhite;
+    background-color: #121212;
+    /* background-color: ghostwhite; */
     border-radius: 15px;
     /* border: solid #FF9900 6px; */
     border: solid #00A8E1 6px;
@@ -12,8 +12,9 @@
 }
 
 #cardDateTxt {
-    /* color: ghostwhite; */
+    color: ghostwhite;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 #cardLogoDiv {
