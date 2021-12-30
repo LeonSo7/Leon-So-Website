@@ -16,10 +16,10 @@ function Home() {
     return (
         <div>
             <div id="aboutSection">
-                <div className="column">
+                <div className="column" id="cardDiv">
                     <Card></Card>
                 </div>
-                <div className="doubleColumn">
+                <div className="doubleColumn" id="aboutTxtContentDiv">
                     <div id="headerTxtDiv">
                         <h1 id="mainHeaderTxt">
                             Hello World!&nbsp;
@@ -29,6 +29,22 @@ function Home() {
                                 <Emoji name="waving-hand-light-skin-tone" width={40} />
                             </EmojiProvider>
                         </Animated>
+                    </div>
+                    <div id="bioTextDiv">
+                        <p>
+                            My name is Leon So. I am currently a Software Engineering &amp; Management student at McMaster University and a software engineering intern at Amazon.
+                        </p>
+                        <p>
+                            I am a creative, hardworking, innovative, and team-oriented individual, who aims to make positive, real-life impact in through my work.
+                            To me, software is a powerful tool that allows us to create, build, and explore different ideas which are only limited by our imagination.
+                            I am motivated by the positive impact that software &amp; technology can have on our everyday lives.
+                        </p>
+                        <p>
+                            During my free-time, you'll likely find me: fishing, boating, hiking, woodworking, working on DIY projects, trying new foods, or exploring new places!
+                        </p>
+                        <p>
+                            To learn more about me and my past &amp; current experience, please use the interactive timeline below, visit my LinkedIn page, see my resume, or connect with me directly!
+                        </p>
                     </div>
                 </div>
                 <div className="column">
