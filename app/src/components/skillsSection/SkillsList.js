@@ -54,18 +54,20 @@ function SkillsList(props) {
     function getIcon(skillName) {
         // Custom sizing
         if (skillName === "Express" || skillName === "Dojo" || skillName === "Expo") {
-            return (<img src={iconsLogoPath[skillName]} height="15px" />)
+            return (<img alt={skillName + " Logo"} src={iconsLogoPath[skillName]} height="15px" />)
         } else if (skillName === "JUnit" || skillName === "pytest") {
-            return (<img src={iconsLogoPath[skillName]} height="18px" />)
+            return (<img alt={skillName + " Logo"} src={iconsLogoPath[skillName]} height="18px" />)
         }
         // Default
-        return (<img src={iconsLogoPath[skillName]} height="25px" />)
+        return (<img alt={skillName + " Logo"} src={iconsLogoPath[skillName]} height="25px" />)
     }
 
     /* Toggle and set state to show secondary skills */
-    function showAllSkills() {
-        setShowSecondarySkills(true);
-        setDisplayShowSecondaryButton(false);
+    function showAllSkills(e) {
+        if (e.type === "click" || e.code === "Enter" || e.code === "Space") {
+            setShowSecondarySkills(true);
+            setDisplayShowSecondaryButton(false);
+        }
     }
 
     return (
@@ -87,7 +89,12 @@ function SkillsList(props) {
             {/* Show All button */}
             {/* Only show button if secondary skills exist */}
             {secondarySkills && displayShowSecondaryButton ?
-                <div className="skillDiv showAllButton" onClick={() => showAllSkills()}>
+                <div
+                    className="skillDiv showAllButton"
+                    tabIndex="0"
+                    onClick={(e) => showAllSkills(e)}
+                    onKeyDown={(e) => showAllSkills(e)}
+                >
                     <div className="skillDivIcon"><FaPlus size={20} /></div>
                     <div className="skillDivTxt">Show All</div>
                     <div className="skillDivSpaceHolder" />

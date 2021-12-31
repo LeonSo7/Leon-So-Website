@@ -18,9 +18,21 @@ function NextContent() {
                     Please reach out!
                 </p>
                 <div className="contactIcons">
-                    <a href="mailto: sol4@mcmaster.ca"><FiMail className="contactIcon" size={35} /></a>
-                    <a href="https://www.linkedin.com/in/leon-so/"><IoLogoLinkedin className="contactIcon" size={35} /></a>
-                    <a href="https://github.com/leonso7"><IoLogoGithub className="contactIcon" size={35} /></a>
+                    <div className="contactIconDiv">
+                        <a href="mailto: sol4@mcmaster.ca">
+                            <FiMail className="contactIcon" size={35} />
+                        </a>
+                    </div>
+                    <div className="contactIconDiv">
+                        <a href="https://www.linkedin.com/in/leon-so/">
+                            <IoLogoLinkedin className="contactIcon" size={35} />
+                        </a>
+                    </div>
+                    <div className="contactIconDiv">
+                        <a href="https://github.com/leonso7">
+                            <IoLogoGithub className="contactIcon" size={35} />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
