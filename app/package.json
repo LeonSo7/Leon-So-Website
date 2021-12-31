@@ -13,6 +13,7 @@
     "react-animated-css": "^1.2.1",
     "react-apple-emojis": "^2.1.1",
     "react-bootstrap": "^2.0.3",
+    "react-bootstrap-icons": "^1.7.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-perfect-scrollbar": "^1.5.8",

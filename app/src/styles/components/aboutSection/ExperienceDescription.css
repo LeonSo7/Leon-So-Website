@@ -1,0 +1,32 @@
+#companyInfoDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    justify-content: left;
+    text-align: left;
+}
+
+#mainHeaderTxt {
+    font-weight: bold;
+}
+
+.roleTxt {
+    color: #808080;
+    font-size: large;
+    font-weight: bold;
+}
+
+.bulletPoint {
+    text-align: justify;
+}
+
+.briefDescription {
+    text-align: justify;
+}
+
+.experienceDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    justify-content: left;
+}

@@ -1,6 +1,9 @@
 
+/* CSS */
 import '../styles/App.css';
 import '../styles/pages/Home.css';
+
+/* Cards */
 import Card from '../components/cards/Card';
 import AmazonBlueCard from '../components/cards/AmazonBlueCard';
 import AmazonOrangeCard from '../components/cards/AmazonOrangeCard';
@@ -9,13 +12,28 @@ import McMasterCard from '../components/cards/McMasterCard';
 import McMasterGoldCard from '../components/cards/McMasterGoldCard';
 import MetaCard from '../components/cards/MetaCard';
 import PalantirCard from '../components/cards/PalantirCard';
+
+/* About section text content */
+import Bio from '../components/aboutSection/Bio';
+import Amazon2021Description from '../components/aboutSection/Amazon2021Description';
+import Amazon2022Description from '../components/aboutSection/Amazon2022Description';
+import IBMDescription from '../components/aboutSection/IBMDescription';
+import McMasterDescription from '../components/aboutSection/McMasterDescription';
+import MetaDescription from '../components/aboutSection/MetaDescription';
+import PalantirDescription from '../components/aboutSection/PalantirDescription';
+import NextContent from '../components/aboutSection/NextContent';
+
 import { Timeline, TimelineEvent } from '@mailtop/horizontal-timeline';
+
+/* Timeline Icons */
 import { BsFillPersonBadgeFill } from 'react-icons/bs';
 import { SiAmazon, SiIbm, SiPalantir } from 'react-icons/si';
-import { FaFacebookF, FaGraduationCap, FaQuestion, FaUniversity } from 'react-icons/fa';
+import { FaGraduationCap, FaQuestion, FaUniversity } from 'react-icons/fa';
+import { Meta } from "react-bootstrap-icons";
+
 import 'react-perfect-scrollbar/dist/css/styles.css';
-import Bio from '../components/aboutSection/Bio';
 import React, { useState } from "react";
+import Skills from '../components/skillsSection/Skills';
 
 function Home() {
     const [selectedTimelineNode, setSelectedTimelineNode] = useState('Bio');
@@ -47,21 +65,32 @@ function Home() {
         }
     }
 
+    // function setTabIndex() {
+    //     var circles = document.getElementsByTagName('circle');
+    //     for (let i = 0; i < circles.length; i++) {
+    //         circles[i].tabIndex = 0;
+    //     }
+    // }
+
     // Render text content based on timeline event selected
     function renderAboutSectionTxt() {
         switch (selectedTimelineNode) {
-            // case 'McMaster University':
-            //     return (<McMasterCard />);
-            // case 'IBM':
-            //     return (<IBMCard />);
-            // case 'Amazon0':
-            //     return (<AmazonBlueCard />);
-            // case 'Amazon1':
-            //     return (<AmazonOrangeCard />);
-            // case 'Palantir':
-            //     return (<PalantirCard />);
-            // case 'Meta':
-            //     return (<MetaCard />);
+            case 'McMasterUniversity0':
+                return (<McMasterDescription />);
+            case 'McMasterUniversity1':
+                return (<McMasterDescription />);
+            case 'IBM':
+                return (<IBMDescription />);
+            case 'Amazon0':
+                return (<Amazon2021Description />);
+            case 'Amazon1':
+                return (<Amazon2022Description />);
+            case 'Palantir':
+                return (<PalantirDescription />);
+            case 'Meta':
+                return (<MetaDescription />);
+            case 'Future':
+                return (<NextContent />);
             default:
                 return (<Bio />);
         }
@@ -158,9 +187,9 @@ function Home() {
                         }}
                     />
                     <TimelineEvent
-                        icon={FaFacebookF}
-                        color="#1778F2"
-                        title='Facebook (Meta)'
+                        icon={Meta}
+                        color="#0668E1"
+                        title='Meta (Formerly Facebook)'
                         subtitle='(Incoming) 06/22-09/22'
                         action={{
                             label: 'Meta',
@@ -187,7 +216,11 @@ function Home() {
                         }}
                     />
                 </Timeline>
+                {/* {setTabIndex()} */}
             </div>
+
+            {/* Skills Section */}
+            <Skills />
         </div>
     );
 }

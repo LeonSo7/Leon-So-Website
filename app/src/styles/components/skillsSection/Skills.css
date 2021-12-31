@@ -1,0 +1,45 @@
+#skillsSectionMainDiv {
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#skillsSectionHeaderTxt {
+    font-weight: bold;
+}
+
+.skillsSectionSubheaderTxt {
+    text-align: left;
+    color: black;
+}
+
+/* On screens that are 800px or less */
+@media screen and (max-width: 800px) {
+    .skillsSectionSubheaderTxt {
+        text-align: center;
+    }
+
+    #skillsSectionMainDiv {
+        margin-top: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/* On screens that are between 801px and 1200px */
+@media screen and (max-width: 1200px) and (min-width: 801px) {
+    #skillsSectionMainDiv {
+        margin-top: 20px;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+}
+
+/* On screens that are between 1201px 1500px */
+@media screen and (max-width: 1500px) and (min-width: 1201px) {
+    #skillsSectionMainDiv {
+        margin-top: 20px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}

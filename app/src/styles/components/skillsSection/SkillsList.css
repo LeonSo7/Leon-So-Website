@@ -1,0 +1,69 @@
+.skillsListDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: row;
+    vertical-align: middle;
+    justify-content: left;
+    margin-bottom: 30px;
+}
+
+.skillDiv {
+    display: flex;
+    border: solid 2px black;
+    border-radius: 10px;
+    height: 50px;
+    width: 203px;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.skillDivIcon {
+    display: flex;
+    flex: 1;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillDivTxt {
+    text-align: center;
+    flex: 2;
+    font-size: medium;
+}
+
+.skillDivSpaceHolder {
+    flex: 1;
+}
+
+.showAllButton {
+    color: #fff;
+    background-color: black;
+}
+
+.showAllButton:hover {
+    opacity: 0.85;
+}
+
+.showAllButton:active {
+    opacity: 0.75;
+}
+
+/* On screens that are 800px or less */
+@media screen and (max-width: 800px) {
+    .skillsListDiv {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-direction: row;
+        vertical-align: middle;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+  }
+
+  
