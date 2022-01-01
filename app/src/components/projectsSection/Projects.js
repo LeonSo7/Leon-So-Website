@@ -117,7 +117,15 @@ function Projects() {
                         projectData.map(project => {
                             return (
                                 <Col className="projectCardsCol">
-                                    <a className="projectCardAnchor" href={project.githubURL}>
+                                    <a className="projectCardAnchor"
+                                        href={project.githubURL}
+                                        onKeyDown={(e) => {
+                                            if (e.code == 'Space') {
+                                                e.preventDefault();
+                                                e.stopPropagation();
+                                                window.location.href = project.githubURL;
+                                            }
+                                        }} >
                                         <Card className="projectCard">
                                             {/* Card Image */}
                                             <Card.Img variant="top" src={project.thumbnailPath} width="350px" height="175px" alt={project.projectName + " Graphic"} />

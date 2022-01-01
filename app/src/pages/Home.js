@@ -33,13 +33,29 @@ import { FaGraduationCap, FaQuestion, FaUniversity } from 'react-icons/fa';
 import { Meta } from "react-bootstrap-icons";
 
 import 'react-perfect-scrollbar/dist/css/styles.css';
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Skills from '../components/skillsSection/Skills';
 import Projects from '../components/projectsSection/Projects'
 
 function Home() {
     const [selectedTimelineNode, setSelectedTimelineNode] = useState('Bio');
 
+    useEffect(() => {
+        setTabIndex();
+    }, [])
+
+    // Map timeline node index to selected timeline node state for accessibility key controls
+    var nodeToTimelimeState = {
+        0: 'Bio',
+        1: 'McMasterUniversity0',
+        2: 'IBM',
+        3: 'Amazon0',
+        4: 'Amazon1',
+        5: 'Palantir',
+        6: 'Meta',
+        7: 'McMasterUniversity1',
+        8: 'Future'
+    }
     // Set state based on timeline node/event selected
     function selectTimelineNode(selectedNodeValue) {
         setSelectedTimelineNode(selectedNodeValue);
@@ -69,12 +85,19 @@ function Home() {
         }
     }
 
-    // function setTabIndex() {
-    //     var circles = document.getElementsByTagName('circle');
-    //     for (let i = 0; i < circles.length; i++) {
-    //         circles[i].tabIndex = 0;
-    //     }
-    // }
+    function setTabIndex() {
+        var circles = document.getElementsByTagName('circle');
+        for (let i = 0; i < circles.length; i++) {
+            circles[i].tabIndex = 0;
+            circles[i].onkeydown = function (e) {
+                if (e.code === "Enter" || e.code === "Space") {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    selectTimelineNode(nodeToTimelimeState[i])
+                }
+            };
+        }
+    }
 
     // Render text content based on timeline event selected
     function renderAboutSectionTxt() {
@@ -221,7 +244,7 @@ function Home() {
                         }}
                     />
                 </Timeline>
-                {/* {setTabIndex()} */}
+                {setTabIndex()}
             </div>
 
             {/* Skills Section */}

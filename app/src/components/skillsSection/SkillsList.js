@@ -66,6 +66,8 @@ function SkillsList(props) {
     /* Toggle and set state to show secondary skills */
     function showAllSkills(e) {
         if (e.type === "click" || e.code === "Enter" || e.code === "Space") {
+            e.preventDefault();
+            e.stopPropagation();
             setShowSecondarySkills(true);
             setDisplayShowSecondaryButton(false);
         }
