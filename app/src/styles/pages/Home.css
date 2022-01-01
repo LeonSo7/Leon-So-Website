@@ -81,6 +81,12 @@
     opacity: 0.6 !important;
 }
 
+/* Remove outline for mouse focus, but preserves it for (accessibility) keyboard users */
+circle:focus:not(:focus-visible){
+    outline: none;
+}
+
+
 /* Offset href anchor to adjust for header */
 div#about {
     display: block;
