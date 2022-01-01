@@ -120,7 +120,7 @@ function Projects() {
                                     <a className="projectCardAnchor" href={project.githubURL}>
                                         <Card className="projectCard">
                                             {/* Card Image */}
-                                            <Card.Img variant="top" src={project.thumbnailPath} width="350px" height="175px" />
+                                            <Card.Img variant="top" src={project.thumbnailPath} width="350px" height="175px" alt={project.projectName + " Graphic"} />
                                             <Card.Body>
                                                 {/* Card Title */}
                                                 <Card.Title className="projectCardTitle">{project.projectName}</Card.Title>
