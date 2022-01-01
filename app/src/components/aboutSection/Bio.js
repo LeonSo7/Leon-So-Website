@@ -1,7 +1,10 @@
 import '../../styles/components/aboutSection/Bio.css'
+import '../../styles/components/ContactIcons.css'
 import { EmojiProvider, Emoji } from 'react-apple-emojis'
 import emojiData from 'react-apple-emojis/lib/data.json'
 import { Animated } from "react-animated-css";
+import ContactIcons from '../ContactIcons';
+import { GrDocumentPdf } from 'react-icons/gr';
 
 function Bio() {
     return (
@@ -28,10 +31,11 @@ function Bio() {
                     <br />
                     During my free-time, you'll likely find me: fishing, boating, hiking, woodworking, working on DIY projects, trying new foods, or exploring new places! <br />
                     <br />
-                    To learn more about me and my past &amp; current experience, please use the interactive timeline below, visit my LinkedIn page, see my resume, or connect with me directly!
+                    To learn more about me and my past &amp; current experience, please use the interactive timeline below, visit my LinkedIn or GitHub page, see my resume, or connect with me directly!
                 </p>
             </div>
-        </div>
+            <ContactIcons {...{ showResumeIcon: true }} />
+        </div >
     );
 }
 

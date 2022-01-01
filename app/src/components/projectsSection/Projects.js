@@ -119,6 +119,10 @@ function Projects() {
                                 <Col className="projectCardsCol">
                                     <a className="projectCardAnchor"
                                         href={project.githubURL}
+                                        /* Accessibility */
+                                        // Set aria-label for accessibility
+                                        aria-label={project.projectName + " Project Card"}
+                                        // Define accessibility keyboard handler
                                         onKeyDown={(e) => {
                                             if (e.code == 'Space') {
                                                 e.preventDefault();

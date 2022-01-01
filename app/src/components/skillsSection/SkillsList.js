@@ -96,6 +96,7 @@ function SkillsList(props) {
                     <div
                         className="skillDiv showAllButton"
                         tabIndex="0"
+                        aria-label="Show All Button"
                         onClick={(e) => showAllSkills(e)}
                         onKeyDown={(e) => showAllSkills(e)}
                     >

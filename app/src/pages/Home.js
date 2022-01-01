@@ -85,10 +85,12 @@ function Home() {
         }
     }
 
+    // Set tab index of timeline circle tagged elements for keyboard accessibility
     function setTabIndex() {
         var circles = document.getElementsByTagName('circle');
         for (let i = 0; i < circles.length; i++) {
             circles[i].tabIndex = 0;
+            // Define onkeydown handler for keyboard accessibility
             circles[i].onkeydown = function (e) {
                 if (e.code === "Enter" || e.code === "Space") {
                     e.preventDefault();
@@ -96,6 +98,8 @@ function Home() {
                     selectTimelineNode(nodeToTimelimeState[i])
                 }
             };
+            // Set aria-label for circle (timeline node)
+            circles[i].setAttribute('aria-label', nodeToTimelimeState[i] + " Timeline Event");
         }
     }
 

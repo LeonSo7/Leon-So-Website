@@ -14,25 +14,7 @@
     font-weight: bold;
 }
 
-/* Contact Icons on What's Next Page */
-.contactIcons {
+#bioIconsDiv {
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
-}
-
-.contactIcon {
-    color: black;
-}
-
-.contactIcon:hover {
-    opacity: 0.8;
-}
-
-.contactIconDiv {
-    margin-right: 15px;
-}
-
-.contactIcon:active {
-    opacity: 0.5;
 }
