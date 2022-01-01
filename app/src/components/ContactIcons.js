@@ -62,13 +62,13 @@ function ContactIcons(props) {
                 <div className="contactIconDiv">
                     <a
                         className="contactIconAnchor"
-                        href="https://www.linkedin.com/in/leon-so/"
-                        aria-label="LinkedIn"
+                        href="/uploads/Leon So - Resume.pdf"
+                        aria-label="Resume"
                         onKeyDown={(e) => {
                             if (e.code == 'Space') {
                                 e.preventDefault();
                                 e.stopPropagation();
-                                window.location.href = "https://www.linkedin.com/in/leon-so/";
+                                window.location.href = "/uploads/Leon So - Resume.pdf";
                             }
                         }}
                     >
