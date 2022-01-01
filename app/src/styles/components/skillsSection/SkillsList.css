@@ -1,4 +1,4 @@
-.skillsListDiv {
+.skillsListSubDiv {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -6,6 +6,10 @@
     vertical-align: middle;
     justify-content: left;
     margin-bottom: 30px;
+}
+
+.skillsListMainDiv {
+    display: flex;
 }
 
 .skillDiv {
@@ -55,7 +59,7 @@
 
 /* On screens that are 800px or less */
 @media screen and (max-width: 800px) {
-    .skillsListDiv {
+    .skillsListSubDiv {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;

@@ -12,6 +12,7 @@ import McMasterCard from '../components/cards/McMasterCard';
 import McMasterGoldCard from '../components/cards/McMasterGoldCard';
 import MetaCard from '../components/cards/MetaCard';
 import PalantirCard from '../components/cards/PalantirCard';
+import NextCard from '../components/cards/NextCard';
 
 /* About section text content */
 import Bio from '../components/aboutSection/Bio';
@@ -34,6 +35,7 @@ import { Meta } from "react-bootstrap-icons";
 import 'react-perfect-scrollbar/dist/css/styles.css';
 import React, { useState } from "react";
 import Skills from '../components/skillsSection/Skills';
+import Projects from '../components/projectsSection/Projects'
 
 function Home() {
     const [selectedTimelineNode, setSelectedTimelineNode] = useState('Bio');
@@ -60,6 +62,8 @@ function Home() {
                 return (<PalantirCard />);
             case 'Meta':
                 return (<MetaCard />);
+            case 'Future':
+                return (<NextCard />);
             default:
                 return (<Card />);
         }
@@ -98,6 +102,7 @@ function Home() {
 
     return (
         <div>
+            <div id="about" />
             <div id="aboutSection">
                 <div className="column" id="cardDiv">
                     {
@@ -220,7 +225,12 @@ function Home() {
             </div>
 
             {/* Skills Section */}
+            <div id="skills" />
             <Skills />
+
+            {/* Projects Section */}
+            <div id="projects" />
+            <Projects />
         </div>
     );
 }

@@ -4,7 +4,7 @@ import SkillsList from './SkillsList';
 
 const programmingLanguagesProps = {
     intermediateSkills: ["JavaScript", "Python", "Java", "SQL", "C++", "C", "Golang"],
-    secondarySkills: ["HTML", "CSS", "Bash", "LaTex"]
+    secondarySkills: ["HTML", "CSS", "C#", "Bash", "LaTex"]
 }
 
 const frameworkProps = {

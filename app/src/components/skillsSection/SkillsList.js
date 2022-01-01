@@ -13,6 +13,7 @@ function SkillsList(props) {
         "Bash": "/assets/skillIcons/bash.svg",
         "C": "/assets/skillIcons/c.svg",
         "C++": "/assets/skillIcons/c++.svg",
+        "C#": "/assets/skillIcons/c-sharp.svg",
         "CSS": "/assets/skillIcons/css3.svg",
         "Golang": "/assets/skillIcons/golang.svg",
         "HTML": "/assets/skillIcons/html5.svg",
@@ -71,51 +72,53 @@ function SkillsList(props) {
     }
 
     return (
-        <div className="skillsListDiv">
-            {/* Only show intermediate skills initially */}
-            {intermediateSkills ?
-                intermediateSkills.map(skill => {
-                    return (
-                        <div className="skillDiv">
-                            <div className="skillDivIcon">{getIcon(skill)}</div>
-                            <div className="skillDivTxt">{skill}</div>
-                            <div className="skillDivSpaceHolder" />
-                        </div>
-                    )
-                })
-                : <></>
-            }
+        <div className="skillsListMainDiv">
+            <div className="skillsListSubDiv">
+                {/* Only show intermediate skills initially */}
+                {intermediateSkills ?
+                    intermediateSkills.map(skill => {
+                        return (
+                            <div className="skillDiv">
+                                <div className="skillDivIcon">{getIcon(skill)}</div>
+                                <div className="skillDivTxt">{skill}</div>
+                                <div className="skillDivSpaceHolder" />
+                            </div>
+                        )
+                    })
+                    : <></>
+                }
 
-            {/* Show All button */}
-            {/* Only show button if secondary skills exist */}
-            {secondarySkills && displayShowSecondaryButton ?
-                <div
-                    className="skillDiv showAllButton"
-                    tabIndex="0"
-                    onClick={(e) => showAllSkills(e)}
-                    onKeyDown={(e) => showAllSkills(e)}
-                >
-                    <div className="skillDivIcon"><FaPlus size={20} /></div>
-                    <div className="skillDivTxt">Show All</div>
-                    <div className="skillDivSpaceHolder" />
+                {/* Show All button */}
+                {/* Only show button if secondary skills exist */}
+                {secondarySkills && displayShowSecondaryButton ?
+                    <div
+                        className="skillDiv showAllButton"
+                        tabIndex="0"
+                        onClick={(e) => showAllSkills(e)}
+                        onKeyDown={(e) => showAllSkills(e)}
+                    >
+                        <div className="skillDivIcon"><FaPlus size={20} /></div>
+                        <div className="skillDivTxt">Show All</div>
+                        <div className="skillDivSpaceHolder" />
 
-                </div>
-                : <></>
-            }
+                    </div>
+                    : <></>
+                }
 
-            {/* Only show secondary skills after show all button is pressed */}
-            {secondarySkills && showSecondarySkills ?
-                secondarySkills.map(skill => {
-                    return (
-                        <div className="skillDiv">
-                            <div className="skillDivIcon">{getIcon(skill)}</div>
-                            <div className="skillDivTxt">{skill}</div>
-                            <div className="skillDivSpaceHolder" />
-                        </div>
-                    )
-                })
-                : <></>
-            }
+                {/* Only show secondary skills after show all button is pressed */}
+                {secondarySkills && showSecondarySkills ?
+                    secondarySkills.map(skill => {
+                        return (
+                            <div className="skillDiv">
+                                <div className="skillDivIcon">{getIcon(skill)}</div>
+                                <div className="skillDivTxt">{skill}</div>
+                                <div className="skillDivSpaceHolder" />
+                            </div>
+                        )
+                    })
+                    : <></>
+                }
+            </div>
         </div >
     );
 }

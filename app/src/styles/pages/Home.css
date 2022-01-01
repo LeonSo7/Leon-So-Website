@@ -1,14 +1,3 @@
-/* Timeline */
-#timelineDiv {
-    background-color: #202124;
-    align-items: center; 
-    justify-content: center;
-    vertical-align: middle;
-    height: 180px;
-    padding-top: 45px !important;
-    padding-left: 10px !important;
-}
-
 /* About section */
 #aboutSection {
     margin-top: 30px;
@@ -60,6 +49,16 @@
   }
 
 /* Timeline */
+#timelineDiv {
+    background-color: #202124;
+    align-items: center; 
+    justify-content: center;
+    vertical-align: middle;
+    height: 180px;
+    padding-top: 45px !important;
+    padding-left: 10px !important;
+}
+
 /* Timeline scroll bar -- always show scroll bar after initialized */
 .ps-container > .ps-scrollbar-x-rail,
 .ps-container > .ps__rail-x, 
@@ -80,4 +79,20 @@
 .MuiGrid-root:active > svg > g,
 .MuiGrid-root:active > svg > g > circle {
     opacity: 0.6 !important;
+}
+
+/* Offset href anchor to adjust for header */
+div#about {
+    display: block;
+    position: relative;
+    top: -85px;
+    visibility: hidden;
+}
+
+div#projects,
+div#skills {
+    display: block;
+    position: relative;
+    top: -54px;
+    visibility: hidden;
 }
