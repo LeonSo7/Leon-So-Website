@@ -4,7 +4,6 @@ import { EmojiProvider, Emoji } from 'react-apple-emojis'
 import emojiData from 'react-apple-emojis/lib/data.json'
 import { Animated } from "react-animated-css";
 import ContactIcons from '../ContactIcons';
-import { GrDocumentPdf } from 'react-icons/gr';
 
 function Bio() {
     return (
