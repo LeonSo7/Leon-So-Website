@@ -99,6 +99,8 @@ function Home() {
                     e.preventDefault();
                     e.stopPropagation();
                     selectTimelineNode(nodeToTimelimeState[i])
+                    /* Navigate to top of aboout section upon selecting a new timeline node */
+                    window.location.href = "#about";
                 }
             };
             // Set aria-label for circle (timeline node)
