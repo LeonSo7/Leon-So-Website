@@ -9,19 +9,91 @@ function Header() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#about"><b>ABOUT ME</b></Nav.Link>
-                        <Nav.Link href="#skills"><b>SKILLS</b></Nav.Link>
-                        <Nav.Link href="#projects"><b>PROJECTS</b></Nav.Link>
+                        <Nav.Link
+                            href="#about"
+                            // Define accessibility keyboard handler
+                            onKeyDown={(e) => {
+                                if (e.code == 'Space') {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    window.location.href = "#about";
+                                }
+                            }}
+                        >
+                            <b>ABOUT ME</b>
+                        </Nav.Link>
+                        <Nav.Link
+                            href="#skills"
+                            onKeyDown={(e) => {
+                                if (e.code == 'Space') {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    window.location.href = "#skills";
+                                }
+                            }}
+                        >
+                            <b>SKILLS</b>
+                        </Nav.Link>
+                        <Nav.Link
+                            href="#projects"
+                            onKeyDown={(e) => {
+                                if (e.code == 'Space') {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    window.location.href = "#projects";
+                                }
+                            }}
+                        >
+                            <b>PROJECTS</b>
+                        </Nav.Link>
                     </Nav>
                     <Nav className="ms-auto">
-                        <Nav.Link href="mailto: sol4@mcmaster.ca"><b>EMAIL</b></Nav.Link>
-                        <Nav.Link href="https://www.linkedin.com/in/leon-so/">
+                        <Nav.Link
+                            href="mailto: sol4@mcmaster.ca"
+                            onKeyDown={(e) => {
+                                if (e.code == 'Space') {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    window.location.href = "mailto: sol4@mcmaster.ca";
+                                }
+                            }}
+                        >
+                            <b>EMAIL</b>
+                        </Nav.Link>
+                        <Nav.Link
+                            href="https://www.linkedin.com/in/leon-so/"
+                            onKeyDown={(e) => {
+                                if (e.code == 'Space') {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    window.location.replace("https://www.linkedin.com/in/leon-so/");
+                                }
+                            }}
+                        >
                             <b>LINKEDIN</b>
                         </Nav.Link>
-                        <Nav.Link href="https://github.com/LeonSo7">
+                        <Nav.Link
+                            href="https://github.com/LeonSo7"
+                            onKeyDown={(e) => {
+                                if (e.code == 'Space') {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    window.location.replace("https://github.com/LeonSo7");
+                                }
+                            }}
+                        >
                             <b>GITHUB</b>
                         </Nav.Link>
-                        <Nav.Link href="/uploads/Leon So - Resume.pdf">
+                        <Nav.Link
+                            href="/uploads/Leon So - Resume.pdf"
+                            onKeyDown={(e) => {
+                                if (e.code == 'Space') {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    window.location.href = "/uploads/Leon So - Resume.pdf";
+                                }
+                            }}
+                        >
                             <b>RESUME</b>
                         </Nav.Link>
                     </Nav>
