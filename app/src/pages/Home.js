@@ -47,6 +47,11 @@ function Home() {
         setTabIndex();
     }, [])
 
+    useEffect(() => {
+        /* Navigate to top of aboout section upon selecting a new timeline node */
+        window.location.href = "#about";
+    }, [selectedTimelineNode])
+
     // Map timeline node index to selected timeline node state for accessibility key controls
     var nodeToTimelimeState = {
         0: 'Bio',
@@ -98,9 +103,7 @@ function Home() {
                 if (e.code === "Enter" || e.code === "Space") {
                     e.preventDefault();
                     e.stopPropagation();
-                    selectTimelineNode(nodeToTimelimeState[i])
-                    /* Navigate to top of aboout section upon selecting a new timeline node */
-                    window.location.href = "#about";
+                    selectTimelineNode(nodeToTimelimeState[i]);
                 }
             };
             // Set aria-label for circle (timeline node)
