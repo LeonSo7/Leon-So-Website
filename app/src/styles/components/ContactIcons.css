@@ -23,3 +23,10 @@
 #resumeIconDiv {
     padding: 2px;
 }
+
+/* On screens that are 800px or less */
+@media screen and (max-width: 800px) {
+    .contactIcons {
+        margin-bottom: 20px;
+    }
+  }
