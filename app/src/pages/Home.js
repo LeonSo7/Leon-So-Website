@@ -31,11 +31,13 @@ import { BsFillPersonBadgeFill } from 'react-icons/bs';
 import { SiAmazon, SiIbm, SiPalantir } from 'react-icons/si';
 import { FaGraduationCap, FaQuestion, FaUniversity } from 'react-icons/fa';
 import { Meta } from "react-bootstrap-icons";
+// import { ReactComponent as Passionfruit } from "../assets/passionfruit.svg";
 
 import 'react-perfect-scrollbar/dist/css/styles.css';
 import React, { useState, useEffect } from "react";
 import Skills from '../components/skillsSection/Skills';
 import Projects from '../components/projectsSection/Projects'
+
 
 function Home() {
     const [selectedTimelineNode, setSelectedTimelineNode] = useState('Bio');
@@ -177,7 +179,16 @@ function Home() {
                             onClick: () => selectTimelineNode('McMasterUniversity0')
                         }}
                     />
-
+                    {/* <TimelineEvent
+                        icon={Passionfruit}
+                        color="#AF026D"
+                        title='Passionfruit Inc.'
+                        subtitle='09/17'
+                        action={{
+                            label: 'Passionfruit',
+                            onClick: () => selectTimelineNode('Passionfruit')
+                        }}
+                    /> */}
                     <TimelineEvent
                         icon={SiIbm}
                         color="#0043CE"
