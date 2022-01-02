@@ -8,7 +8,6 @@ function McMasterDescription() {
     engineering students with a deeper understanding of business, project management, and leadership skills \
     needed to thrive in a corporate or entrepreneurial environment."
 
-
     const props = { companyName: companyName, role: role, briefDescription: briefDescription };
     return (
         <div className="experienceDiv">
