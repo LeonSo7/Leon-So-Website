@@ -1,2 +1,6 @@
 # Leon So - Website
-The source code for my personal website.
+Personal website built using React.js.
+
+Please visit [www.leonso.ca](https://leonso.ca) for a live demo!
+
+![](images/fullPageScreenshot.png)
