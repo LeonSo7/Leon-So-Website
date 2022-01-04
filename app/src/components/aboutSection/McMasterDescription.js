@@ -13,7 +13,7 @@ function McMasterDescription() {
         <div className="experienceDiv">
             <ExperienceDescription {...props} />
             <p className="briefDescription">On top of the traditional requirements of an engineering degree, Engineering and Management students complete an additional 15 courses that make up the core of a business degree.</p>
-            <p className="briefDescription"><a href="https://www.eng.mcmaster.ca/engineering-management-program">https://www.eng.mcmaster.ca/engineering-management-program</a></p>
+            <p className="briefDescription"><a href="https://www.eng.mcmaster.ca/engineering-management-program" target="_blank">https://www.eng.mcmaster.ca/engineering-management-program</a></p>
         </div>
     );
 }
