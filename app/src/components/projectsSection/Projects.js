@@ -119,6 +119,7 @@ function Projects() {
                                 <Col className="projectCardsCol">
                                     <a className="projectCardAnchor"
                                         href={project.githubURL}
+                                        target="_blank"
                                         /* Accessibility */
                                         // Set aria-label for accessibility
                                         aria-label={project.projectName + " Project Card"}
@@ -127,7 +128,10 @@ function Projects() {
                                             if (e.code == 'Space') {
                                                 e.preventDefault();
                                                 e.stopPropagation();
-                                                window.location.href = project.githubURL;
+                                                window.open(
+                                                    project.githubURL,
+                                                    "_blank" // Open in a new window
+                                                );
                                             }
                                         }} >
                                         <Card className="projectCard">

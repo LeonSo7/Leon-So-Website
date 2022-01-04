@@ -62,11 +62,15 @@ function Header() {
                         </Nav.Link>
                         <Nav.Link
                             href="https://www.linkedin.com/in/leon-so/"
+                            target="_blank"
                             onKeyDown={(e) => {
                                 if (e.code == 'Space') {
                                     e.preventDefault();
                                     e.stopPropagation();
-                                    window.location.replace("https://www.linkedin.com/in/leon-so/");
+                                    window.open(
+                                        "https://www.linkedin.com/in/leon-so/",
+                                        "_blank" // Open in a new window
+                                    );
                                 }
                             }}
                         >
@@ -74,11 +78,15 @@ function Header() {
                         </Nav.Link>
                         <Nav.Link
                             href="https://github.com/LeonSo7"
+                            target="_blank"
                             onKeyDown={(e) => {
                                 if (e.code == 'Space') {
                                     e.preventDefault();
                                     e.stopPropagation();
-                                    window.location.replace("https://github.com/LeonSo7");
+                                    window.open(
+                                        "https://github.com/leonso7",
+                                        "_blank" // Open in a new window
+                                    );
                                 }
                             }}
                         >
@@ -86,11 +94,15 @@ function Header() {
                         </Nav.Link>
                         <Nav.Link
                             href="/uploads/Leon So - Resume.pdf"
+                            target="_blank"
                             onKeyDown={(e) => {
                                 if (e.code == 'Space') {
                                     e.preventDefault();
                                     e.stopPropagation();
-                                    window.location.href = "/uploads/Leon So - Resume.pdf";
+                                    window.open(
+                                        "/uploads/Leon So - Resume.pdf",
+                                        "_blank" // Open in a new window
+                                    );
                                 }
                             }}
                         >

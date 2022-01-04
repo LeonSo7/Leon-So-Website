@@ -14,6 +14,7 @@ function ContactIcons(props) {
                 <a
                     className="contactIconAnchor"
                     href="mailto: sol4@mcmaster.ca"
+                    // Accessibility
                     aria-label="Email"
                     onKeyDown={(e) => {
                         if (e.code == 'Space') {
@@ -30,12 +31,17 @@ function ContactIcons(props) {
                 <a
                     className="contactIconAnchor"
                     href="https://www.linkedin.com/in/leon-so/"
+                    target="_blank"
+                    // Accessibility
                     aria-label="LinkedIn"
                     onKeyDown={(e) => {
                         if (e.code == 'Space') {
                             e.preventDefault();
                             e.stopPropagation();
-                            window.location.href = "https://www.linkedin.com/in/leon-so/";
+                            window.open(
+                                "https://www.linkedin.com/in/leon-so/",
+                                "_blank" // Open in a new window
+                            );
                         }
                     }}
                 >
@@ -46,12 +52,17 @@ function ContactIcons(props) {
                 <a
                     className="contactIconAnchor"
                     href="https://github.com/leonso7"
+                    target="_blank"
+                    // Accessibility
                     aria-label="GitHub"
                     onKeyDown={(e) => {
                         if (e.code == 'Space') {
                             e.preventDefault();
                             e.stopPropagation();
-                            window.location.href = "https://github.com/leonso7";
+                            window.open(
+                                "https://github.com/leonso7",
+                                "_blank" // Open in a new window
+                            );
                         }
                     }}
                 >
@@ -63,12 +74,17 @@ function ContactIcons(props) {
                     <a
                         className="contactIconAnchor"
                         href="/uploads/Leon So - Resume.pdf"
+                        target="_blank"
+                        // Accessibility
                         aria-label="Resume"
                         onKeyDown={(e) => {
                             if (e.code == 'Space') {
                                 e.preventDefault();
                                 e.stopPropagation();
-                                window.location.href = "/uploads/Leon So - Resume.pdf";
+                                window.open(
+                                    "/uploads/Leon So - Resume.pdf",
+                                    "_blank" // Open in a new window
+                                );
                             }
                         }}
                     >
