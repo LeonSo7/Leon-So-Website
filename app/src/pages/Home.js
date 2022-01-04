@@ -226,7 +226,8 @@ function Home() {
                             onClick: () => selectTimelineNode('Amazon1')
                         }}
                     />
-                    <TimelineEvent
+                    {/* Temporary nodes - uncomment to enable */}
+                    {/* <TimelineEvent
                         icon={SiPalantir}
                         color="#000000"
                         title='Palantir Technologies'
@@ -245,7 +246,7 @@ function Home() {
                             label: 'Meta',
                             onClick: () => selectTimelineNode('Meta')
                         }}
-                    />
+                    /> */}
                     <TimelineEvent
                         icon={FaGraduationCap}
                         color="#FDBF57"

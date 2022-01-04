@@ -27,6 +27,10 @@
 /* On screens that are 800px or less */
 @media screen and (max-width: 800px) {
     .contactIcons {
+        display: flex;
         margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
     }
   }

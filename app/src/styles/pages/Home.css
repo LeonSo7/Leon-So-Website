@@ -31,12 +31,17 @@
     #aboutSection {
         margin-top: 30px;
         margin-bottom: 30px;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
         display: flex;
         flex-direction: column-reverse;
     }
-  }
+
+    #aboutTxtContentDiv{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
 
 /* On screens that are between 801px and 1300px */
 @media screen and (max-width: 1300px) and (min-width: 801px) {
