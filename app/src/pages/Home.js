@@ -59,10 +59,11 @@ function Home() {
         2: 'IBM',
         3: 'Amazon0',
         4: 'Amazon1',
-        5: 'Palantir',
-        6: 'Meta',
-        7: 'McMasterUniversity1',
-        8: 'Future'
+        // Uncomment and re-number to enable/add nodes
+        // 5: 'Palantir',
+        // 6: 'Meta',
+        5: 'McMasterUniversity1',
+        6: 'Future'
     }
     // Set state based on timeline node/event selected
     function selectTimelineNode(selectedNodeValue) {
