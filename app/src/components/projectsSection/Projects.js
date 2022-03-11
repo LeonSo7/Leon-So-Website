@@ -1,47 +1,8 @@
 import "../../styles/components/projectsSection/Projects.css"
 import { Row, Col, Card } from 'react-bootstrap';
+import { ICONS_LOGO_PATH } from '../../common/Constants';
 
 function Projects() {
-
-    const iconsLogoPath = {
-        // Programming languages
-        "Bash": "/assets/skillIcons/bash.svg",
-        "C": "/assets/skillIcons/c.svg",
-        "C++": "/assets/skillIcons/c++.svg",
-        "C#": "/assets/skillIcons/c-sharp.svg",
-        "CSS": "/assets/skillIcons/css3.svg",
-        "Golang": "/assets/skillIcons/golang.svg",
-        "HTML": "/assets/skillIcons/html5.svg",
-        "Java": "/assets/skillIcons/java.svg",
-        "JavaScript": "/assets/skillIcons/javascript.svg",
-        "LaTex": "/assets/skillIcons/latex.svg",
-        "Python": "/assets/skillIcons/python.svg",
-        "SQL": "/assets/skillIcons/sql.png",
-        // Frameworks
-        "Dojo": "/assets/skillIcons/dojo.svg",
-        "Expo": "/assets/skillIcons/expo.svg",
-        "Express": "/assets/skillIcons/express.svg",
-        "LoopBack4": "/assets/skillIcons/loopback.svg",
-        "Node.js": "/assets/skillIcons/nodejs.png",
-        "React": "/assets/skillIcons/react.png",
-        "React Native": "/assets/skillIcons/react.png",
-        "Redux": "/assets/skillIcons/redux.svg",
-        "Unity": "/assets/skillIcons/unity.svg",
-        // Databases
-        "IBM Db2": "/assets/skillIcons/db2.png",
-        "MongoDB": "/assets/skillIcons/mongodb.png",
-        "MySQL": "/assets/skillIcons/mysql.svg",
-        // Cloud & Container Platforms
-        "AWS": "/assets/skillIcons/aws.svg",
-        "AWS S3": "/assets/skillIcons/aws-s3.svg",
-        "AWS EC2": "/assets/skillIcons/aws-ec2.svg",
-        "Azure": "/assets/skillIcons/azure.svg",
-        "Docker": "/assets/skillIcons/docker.svg",
-        "GCP": "/assets/skillIcons/gcp.svg",
-        "Red Hat OCP": "/assets/skillIcons/ocp.png",
-        // Libraries
-        "Flask": "/assets/skillIcons/flask.svg"
-    }
 
     const projectData = [
         {
@@ -99,12 +60,12 @@ function Projects() {
     function getIcon(technologyName) {
         // Custom sizing
         if (technologyName === "Express" || technologyName === "Dojo" || technologyName === "Expo") {
-            return (<img className="projectIconImg" alt={technologyName + " Logo"} src={iconsLogoPath[technologyName]} height="15px" />)
+            return (<img className="projectIconImg" alt={technologyName + " Logo"} src={ICONS_LOGO_PATH[technologyName]} height="15px" />)
         } else if (technologyName === "JUnit" || technologyName === "pytest") {
-            return (<img className="projectIconImg" alt={technologyName + " Logo"} src={iconsLogoPath[technologyName]} height="18px" />)
+            return (<img className="projectIconImg" alt={technologyName + " Logo"} src={ICONS_LOGO_PATH[technologyName]} height="18px" />)
         }
         // Default
-        return (<img className="projectIconImg" alt={technologyName + " Logo"} src={iconsLogoPath[technologyName]} height="25px" />)
+        return (<img className="projectIconImg" alt={technologyName + " Logo"} src={ICONS_LOGO_PATH[technologyName]} height="25px" />)
     }
 
     return (

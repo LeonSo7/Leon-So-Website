@@ -3,17 +3,17 @@ import React, { useState } from "react";
 import SkillsList from './SkillsList';
 
 const programmingLanguagesProps = {
-    intermediateSkills: ["JavaScript", "Python", "Java", "SQL", "C++", "C", "Golang"],
-    secondarySkills: ["HTML", "CSS", "C#", "Bash", "LaTex"]
+    intermediateSkills: ["Java", "Python", "JavaScript", "SQL"],
+    secondarySkills: ["C++", "C", "Golang", "HTML", "CSS", "C#", "Bash", "LaTex"]
 }
 
 const frameworkProps = {
-    intermediateSkills: ["Node.js", "Express", "React"],
-    secondarySkills: ["React Native", "Redux", "Expo", "Unity", "LoopBack4", "Dojo"]
+    intermediateSkills: ["Node.js", "Express", "React", "React Native"],
+    secondarySkills: ["Redux", "Expo", "Unity", "LoopBack4", "Dojo"]
 }
 
 const databaseProps = {
-    intermediateSkills: ["MySQL", "MongoDB", "IBM Db2"]
+    intermediateSkills: ["MySQL", "MongoDB", "IBM Db2", "DynamoDB"]
 }
 
 const testingProps = {
@@ -23,7 +23,8 @@ const testingProps = {
 
 const cloudAndContainerPropgs = {
     intermediateSkills: ["AWS", "GCP", "Red Hat OCP", "Docker"],
-    secondarySkills: ["AWS S3", "AWS EC2"]
+    secondarySkills: ["AWS S3", "AWS EC2", "AWS Lambda", "AWS API Gateway", "AWS Step Functions",
+        "AWS Route53", "AWS Cloudfront"]
 }
 
 function Skills() {
