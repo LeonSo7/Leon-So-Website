@@ -23,7 +23,7 @@ function Bio() {
                     My name is Leon So. I am currently a Software Engineering &amp; Management student at McMaster University and a software engineering intern at Amazon. <br />
                     <br />
                     I am a creative, hardworking, innovative, and team-oriented individual, who aims to make positive, real-life impact in through my work.
-                    To me, software is a powerful tool that allows us to create, build, and explore different ideas which are only limited by our knowledge and imagination.
+                    To me, software is a powerful tool that allows us to create, build, and explore different ideas which are limited only by our knowledge, experience, and imagination.
                     For this reason, I am also passionate about learning, and I strive to continuously learn new things &mdash; whether it be new technologies, skills,
                     abilities, knowledge, cultures &mdash; you name it.
                     Ultimately, I am motivated by the positive impact that software &amp; technology can have on our everyday lives. <br />
