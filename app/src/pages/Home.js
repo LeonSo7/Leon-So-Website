@@ -59,11 +59,11 @@ function Home() {
         2: 'IBM',
         3: 'Amazon0',
         4: 'Amazon1',
+        5: 'Palantir',
         // Uncomment and re-number to enable/add nodes
-        // 5: 'Palantir',
         // 6: 'Meta',
-        5: 'McMasterUniversity1',
-        6: 'Future'
+        6: 'McMasterUniversity1',
+        7: 'Future'
     }
     // Set state based on timeline node/event selected
     function selectTimelineNode(selectedNodeValue) {
@@ -227,8 +227,7 @@ function Home() {
                             onClick: () => selectTimelineNode('Amazon1')
                         }}
                     />
-                    {/* Temporary nodes - uncomment to enable */}
-                    {/* <TimelineEvent
+                    <TimelineEvent
                         icon={SiPalantir}
                         color="#000000"
                         title='Palantir Technologies'
@@ -238,7 +237,8 @@ function Home() {
                             onClick: () => selectTimelineNode('Palantir')
                         }}
                     />
-                    <TimelineEvent
+                    {/* Temporary nodes - uncomment to enable */}
+                    {/* <TimelineEvent
                         icon={Meta}
                         color="#0668E1"
                         title='Meta (Formerly Facebook)'
