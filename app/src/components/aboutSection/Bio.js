@@ -20,7 +20,7 @@ function Bio() {
             </div>
             <div id="bioTextDiv">
                 <p>
-                    My name is Leon So. I am currently a Software Engineering &amp; Management student at McMaster University and a software engineering intern at Amazon. <br />
+                    My name is Leon So. I am currently a Software Engineering &amp; Management student at McMaster University and a software engineering intern at Palantir. <br />
                     <br />
                     I am a creative, hardworking, innovative, and team-oriented individual, who aims to make positive, real-life impact in through my work.
                     To me, software is a powerful tool that allows us to create, build, and explore different ideas which are limited only by our knowledge, experience, and imagination.
