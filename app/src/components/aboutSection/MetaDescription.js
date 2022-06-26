@@ -10,6 +10,7 @@ function MetaDescription() {
     return (
         <div className="experienceDiv">
             <ExperienceDescription {...props} />
+            <p className="briefDescription"><a href="https://prestodb.io/" target="_blank">https://prestodb.io/</a></p>
         </div>
     );
 }
