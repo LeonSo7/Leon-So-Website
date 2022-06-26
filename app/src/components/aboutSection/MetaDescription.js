@@ -2,7 +2,7 @@ import ExperienceDescription from "./ExperienceDescription";
 import '../../styles/components/aboutSection/ExperienceDescription.css'
 
 function MetaDescription() {
-    const companyName = "Meta (Formerly Facebook)";
+    const companyName = "Meta";
     const role = "Software Engineer Intern";
     const briefDescription = "PrestoDB is an open source distributed SQL query engine for running interactive \
     analytic queries against data sources of all sizes ranging from gigabytes to petabytes.";

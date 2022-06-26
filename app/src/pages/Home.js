@@ -230,7 +230,7 @@ function Home() {
                         icon={SiPalantir}
                         color="#000000"
                         title='Palantir Technologies'
-                        subtitle='(Incoming) 03/22-06/22'
+                        subtitle='03/22-06/22'
                         action={{
                             label: 'Palantir',
                             onClick: () => selectTimelineNode('Palantir')
@@ -239,8 +239,8 @@ function Home() {
                     <TimelineEvent
                         icon={Meta}
                         color="#0668E1"
-                        title='Meta (Formerly Facebook)'
-                        subtitle='(Incoming) 06/22-09/22'
+                        title='Meta'
+                        subtitle='06/22-09/22'
                         action={{
                             label: 'Meta',
                             onClick: () => selectTimelineNode('Meta')
