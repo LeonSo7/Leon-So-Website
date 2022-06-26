@@ -60,10 +60,9 @@ function Home() {
         3: 'Amazon0',
         4: 'Amazon1',
         5: 'Palantir',
-        // Uncomment and re-number to enable/add nodes
-        // 6: 'Meta',
-        6: 'McMasterUniversity1',
-        7: 'Future'
+        7: 'Meta',
+        8: 'McMasterUniversity1',
+        9: 'Future'
     }
     // Set state based on timeline node/event selected
     function selectTimelineNode(selectedNodeValue) {
@@ -237,8 +236,7 @@ function Home() {
                             onClick: () => selectTimelineNode('Palantir')
                         }}
                     />
-                    {/* Temporary nodes - uncomment to enable */}
-                    {/* <TimelineEvent
+                    <TimelineEvent
                         icon={Meta}
                         color="#0668E1"
                         title='Meta (Formerly Facebook)'
@@ -247,7 +245,7 @@ function Home() {
                             label: 'Meta',
                             onClick: () => selectTimelineNode('Meta')
                         }}
-                    /> */}
+                    />
                     <TimelineEvent
                         icon={FaGraduationCap}
                         color="#FDBF57"
