@@ -10,6 +10,7 @@ export const ICONS_LOGO_PATH = {
     "Java": "/assets/skillIcons/java.svg",
     "JavaScript": "/assets/skillIcons/javascript.svg",
     "LaTex": "/assets/skillIcons/latex.svg",
+    "PHP": "/assets/skillIcons/php.svg",
     "Python": "/assets/skillIcons/python.svg",
     "SQL": "/assets/skillIcons/sql.png",
     // Frameworks
