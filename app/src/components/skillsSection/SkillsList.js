@@ -1,11 +1,12 @@
-import '../../styles/components/skillsSection/SkillsList.css'
+import '../../styles/components/skillsSection/SkillsList.css';
+
 import React, { useState } from "react";
 import { FaPlus } from "react-icons/fa";
 import { ICONS_LOGO_PATH } from '../../common/Constants';
 
 function SkillsList(props) {
-    const [intermediateSkills, setIntermediateSkills] = useState(props.intermediateSkills);
-    const [secondarySkills, setSecondarySkills] = useState(props.secondarySkills);
+    const [intermediateSkills, _setIntermediateSkills] = useState(props.intermediateSkills);
+    const [secondarySkills, _setSecondarySkills] = useState(props.secondarySkills);
     const [showSecondarySkills, setShowSecondarySkills] = useState(false);
     const [displayShowSecondaryButton, setDisplayShowSecondaryButton] = useState(true);
 

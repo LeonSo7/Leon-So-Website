@@ -1,4 +1,5 @@
-import '../../styles/components/Card.css'
+import '../../styles/components/Card.css';
+
 import { FaQuestion } from 'react-icons/fa';
 
 // Card for What's Next (Future) timeline node

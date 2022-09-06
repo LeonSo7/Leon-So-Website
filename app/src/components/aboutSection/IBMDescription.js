@@ -1,3 +1,4 @@
+import React from "react";
 import ExperienceDescription from "./ExperienceDescription";
 
 function IBMDescription() {
@@ -16,7 +17,7 @@ function IBMDescription() {
         "Maintained test suites, created page objects, and wrote Selenium automation tests for authoring environments",
         "Performed accessibility testing and development to make IBM Business Automation Studio, IBM Business \
         Automation Navigator, and IBM Process Designer WCAG 2.1 compliant"
-    ]
+    ];
     const props = { companyName: companyName, role: role, briefDescription: briefDescription, roleDescription: roleDescription };
     return (
         <div className="experienceDiv">
@@ -25,4 +26,4 @@ function IBMDescription() {
     );
 }
 
-export default IBMDescription;
+export default React.memo(IBMDescription);

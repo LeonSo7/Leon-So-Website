@@ -1,4 +1,6 @@
-import '../../styles/components/aboutSection/Bio.css'
+import '../../styles/components/aboutSection/Bio.css';
+
+import React from "react";
 import ContactIcons from '../ContactIcons';
 
 function NextContent() {
@@ -22,4 +24,4 @@ function NextContent() {
     );
 }
 
-export default NextContent;
+export default React.memo(NextContent);

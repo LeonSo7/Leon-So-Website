@@ -45,7 +45,7 @@ function Home() {
 
     useEffect(() => {
         setTabIndex();
-    }, [])
+    }, [setTabIndex])
 
     useEffect(() => {
         /* Navigate to top of aboout section upon selecting a new timeline node */

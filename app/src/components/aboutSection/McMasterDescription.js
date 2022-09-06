@@ -1,5 +1,5 @@
+import React from "react";
 import ExperienceDescription from "./ExperienceDescription";
-import '../../styles/components/aboutSection/ExperienceDescription.css'
 
 function McMasterDescription() {
     const companyName = "McMaster University";
@@ -18,4 +18,4 @@ function McMasterDescription() {
     );
 }
 
-export default McMasterDescription;
+export default React.memo(McMasterDescription);

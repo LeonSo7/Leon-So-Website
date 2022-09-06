@@ -1,3 +1,4 @@
+import React from "react";
 import ExperienceDescription from "./ExperienceDescription";
 
 function Amazon2022Description() {
@@ -18,7 +19,7 @@ function Amazon2022Description() {
         "Implemented a web-based portal acting as an observability hub to provide engineers and \
         stakeholders with visibility on ineffective caches and cache behavior to allow for data-driven \
         decisions on tuning and optimizing caching"
-    ]
+    ];
     const props = { companyName: companyName, role: role, briefDescription: briefDescription, roleDescription: roleDescription };
     return (
         <div className="experienceDiv">
@@ -27,4 +28,4 @@ function Amazon2022Description() {
     );
 }
 
-export default Amazon2022Description;
+export default React.memo(Amazon2022Description);

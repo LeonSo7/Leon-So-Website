@@ -1,5 +1,6 @@
-import '../../styles/components/skillsSection/Skills.css'
-import React, { useState } from "react";
+import '../../styles/components/skillsSection/Skills.css';
+
+import React from "react";
 import SkillsList from './SkillsList';
 
 const programmingLanguagesProps = {

@@ -1,4 +1,5 @@
 import '../../styles/components/Card.css';
+
 import Card from '../../components/cards/Card';
 
 function AmazonBlueCard() {

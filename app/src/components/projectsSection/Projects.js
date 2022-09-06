@@ -1,4 +1,5 @@
-import "../../styles/components/projectsSection/Projects.css"
+import "../../styles/components/projectsSection/Projects.css";
+
 import { Row, Col, Card } from 'react-bootstrap';
 import { ICONS_LOGO_PATH } from '../../common/Constants';
 
@@ -86,7 +87,7 @@ function Projects() {
                                         aria-label={project.projectName + " Project Card"}
                                         // Define accessibility keyboard handler
                                         onKeyDown={(e) => {
-                                            if (e.code == 'Space') {
+                                            if (e.code === 'Space') {
                                                 e.preventDefault();
                                                 e.stopPropagation();
                                                 window.open(

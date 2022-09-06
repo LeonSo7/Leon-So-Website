@@ -1,5 +1,4 @@
 import ExperienceDescription from "./ExperienceDescription";
-import '../../styles/components/aboutSection/ExperienceDescription.css'
 
 function PalantirDescription() {
     const companyName = "Palantir";

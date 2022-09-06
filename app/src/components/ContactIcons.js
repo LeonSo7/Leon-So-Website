@@ -1,12 +1,13 @@
 
-import '../styles/components/ContactIcons.css'
+import '../styles/components/ContactIcons.css';
+
 import { FiMail } from 'react-icons/fi';
 import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io';
 import { GrDocumentPdf } from 'react-icons/gr';
 import React, { useState } from 'react';
 
 function ContactIcons(props) {
-    const [showResumeIcon, setShowResumeIcon] = useState(props.showResumeIcon);
+    const [showResumeIcon, _setShowResumeIcon] = useState(props.showResumeIcon);
 
     return (
         <div className="contactIcons">
@@ -17,7 +18,7 @@ function ContactIcons(props) {
                     // Accessibility
                     aria-label="Email"
                     onKeyDown={(e) => {
-                        if (e.code == 'Space') {
+                        if (e.code === 'Space') {
                             e.preventDefault();
                             e.stopPropagation();
                             window.location.href = "mailto: sol4@mcmaster.ca";
@@ -35,7 +36,7 @@ function ContactIcons(props) {
                     // Accessibility
                     aria-label="LinkedIn"
                     onKeyDown={(e) => {
-                        if (e.code == 'Space') {
+                        if (e.code === 'Space') {
                             e.preventDefault();
                             e.stopPropagation();
                             window.open(
@@ -56,7 +57,7 @@ function ContactIcons(props) {
                     // Accessibility
                     aria-label="GitHub"
                     onKeyDown={(e) => {
-                        if (e.code == 'Space') {
+                        if (e.code === 'Space') {
                             e.preventDefault();
                             e.stopPropagation();
                             window.open(
@@ -78,7 +79,7 @@ function ContactIcons(props) {
                         // Accessibility
                         aria-label="Resume"
                         onKeyDown={(e) => {
-                            if (e.code == 'Space') {
+                            if (e.code === 'Space') {
                                 e.preventDefault();
                                 e.stopPropagation();
                                 window.open(
@@ -99,4 +100,4 @@ function ContactIcons(props) {
     );
 }
 
-export default ContactIcons;
+export default React.memo(ContactIcons);

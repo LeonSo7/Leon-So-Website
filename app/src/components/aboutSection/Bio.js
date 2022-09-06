@@ -1,7 +1,9 @@
-import '../../styles/components/aboutSection/Bio.css'
-import '../../styles/components/ContactIcons.css'
-import { EmojiProvider, Emoji } from 'react-apple-emojis'
-import emojiData from 'react-apple-emojis/lib/data.json'
+import '../../styles/components/aboutSection/Bio.css';
+import '../../styles/components/ContactIcons.css';
+
+import React from "react";
+import { EmojiProvider, Emoji } from 'react-apple-emojis';
+import emojiData from 'react-apple-emojis/lib/data.json';
 import { Animated } from "react-animated-css";
 import ContactIcons from '../ContactIcons';
 
@@ -38,4 +40,4 @@ function Bio() {
     );
 }
 
-export default Bio;
+export default React.memo(Bio);;

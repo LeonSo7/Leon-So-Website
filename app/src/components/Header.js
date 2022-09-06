@@ -1,6 +1,8 @@
-import '../styles/components/Header.css'
+import '../styles/components/Header.css';
 
 import { Container, Navbar, Nav } from 'react-bootstrap';
+import React from "react";
+
 function Header() {
     return (
         <Navbar fixed="top" collapseOnSelect expand="lg" bg="black" variant="dark">
@@ -13,7 +15,7 @@ function Header() {
                             href="#about"
                             // Define accessibility keyboard handler
                             onKeyDown={(e) => {
-                                if (e.code == 'Space') {
+                                if (e.code === 'Space') {
                                     e.preventDefault();
                                     e.stopPropagation();
                                     window.location.href = "#about";
@@ -25,7 +27,7 @@ function Header() {
                         <Nav.Link
                             href="#skills"
                             onKeyDown={(e) => {
-                                if (e.code == 'Space') {
+                                if (e.code === 'Space') {
                                     e.preventDefault();
                                     e.stopPropagation();
                                     window.location.href = "#skills";
@@ -37,7 +39,7 @@ function Header() {
                         <Nav.Link
                             href="#projects"
                             onKeyDown={(e) => {
-                                if (e.code == 'Space') {
+                                if (e.code === 'Space') {
                                     e.preventDefault();
                                     e.stopPropagation();
                                     window.location.href = "#projects";
@@ -51,7 +53,7 @@ function Header() {
                         <Nav.Link
                             href="mailto: sol4@mcmaster.ca"
                             onKeyDown={(e) => {
-                                if (e.code == 'Space') {
+                                if (e.code === 'Space') {
                                     e.preventDefault();
                                     e.stopPropagation();
                                     window.location.href = "mailto: sol4@mcmaster.ca";
@@ -64,7 +66,7 @@ function Header() {
                             href="https://www.linkedin.com/in/leon-so/"
                             target="_blank"
                             onKeyDown={(e) => {
-                                if (e.code == 'Space') {
+                                if (e.code === 'Space') {
                                     e.preventDefault();
                                     e.stopPropagation();
                                     window.open(
@@ -80,7 +82,7 @@ function Header() {
                             href="https://github.com/LeonSo7"
                             target="_blank"
                             onKeyDown={(e) => {
-                                if (e.code == 'Space') {
+                                if (e.code === 'Space') {
                                     e.preventDefault();
                                     e.stopPropagation();
                                     window.open(
@@ -96,7 +98,7 @@ function Header() {
                             href="/uploads/Leon So - Resume.pdf"
                             target="_blank"
                             onKeyDown={(e) => {
-                                if (e.code == 'Space') {
+                                if (e.code === 'Space') {
                                     e.preventDefault();
                                     e.stopPropagation();
                                     window.open(
@@ -115,4 +117,4 @@ function Header() {
     )
 }
 
-export default Header;
+export default React.memo(Header);

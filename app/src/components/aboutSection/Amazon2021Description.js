@@ -1,3 +1,4 @@
+import React from "react";
 import ExperienceDescription from "./ExperienceDescription";
 
 function Amazon2021Description() {
@@ -17,7 +18,7 @@ function Amazon2021Description() {
         entries and priming the local and distributed caches",
         "Improved the availability of Datapath services and mitigated the risk of quota-based throttling from \
         AWS STS through reducing the total number of outgoing requests by approximately 70%"
-    ]
+    ];
     const props = { companyName: companyName, role: role, briefDescription: briefDescription, roleDescription: roleDescription };
     return (
         <div className="experienceDiv">
@@ -26,4 +27,4 @@ function Amazon2021Description() {
     );
 }
 
-export default Amazon2021Description;
+export default React.memo(Amazon2021Description);

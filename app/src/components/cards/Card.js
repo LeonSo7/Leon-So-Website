@@ -1,10 +1,11 @@
-import '../../styles/components/Card.css'
+import '../../styles/components/Card.css';
+
 import React, { useState } from "react";
 
 function Card(props) {
-    const [logoImagePath, setLogoImagePath] = useState(props.logoImagePath);
-    const [logoImageWidth, setLogoImageWidth] = useState(props.logoImageWidth);
-    const [dateTxt, setDateTxt] = useState(props.dateTxt);
+    const [logoImagePath, _setLogoImagePath] = useState(props.logoImagePath);
+    const [logoImageWidth, _setLogoImageWidth] = useState(props.logoImageWidth);
+    const [dateTxt, _setDateTxt] = useState(props.dateTxt);
 
     return (
         <div className="idCard">
